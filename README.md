@@ -10,6 +10,6 @@ A course project of Computer Architecture. To implement a pipeline CPU
 All instructions in the memory, and it executes step-by-step through buttons and switchs at NEXYS. 
 
 ## Reference
-- [riscv-sodor] https://github.com/ucb-bar/riscv-sodor
-- [UC Berkeley CS152] http://www-inst.eecs.berkeley.edu/~cs152/sp16/
+- riscv-sodor: https://github.com/ucb-bar/riscv-sodor
+- UC Berkeley CS152: http://www-inst.eecs.berkeley.edu/~cs152/sp16/
 - Modified version by Tao Jin: https://github.com/tao-j/Duo-RISC
