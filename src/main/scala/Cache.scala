@@ -108,6 +108,22 @@ F  : 01463824; % (3c)        and  r7, r10, r6    # and: 0000ffff          %
     UInt("h03e00008")
   )
 
+  /*
+  * Program 2: Stall, Forwarding&Bypass test code
+   lw r1, $21(r0)       8c010015
+ add r2,r1,r1         00211020
+ sub r3,r1,r2         00221822
+ beq r1,r1,2          10210002
+ andi r4,r2,0         30440000
+ addi r5,r4,1         20850001
+ ori r6,r3,0          34660000
+ bne r6,r3,2          14c30002
+ lw r7,$20(r0)        8c070014
+ sw r7,$21(r0)        ac070015
+ addi r8,r7,1         20e80001
+ j 0                  08000000
+ andi r9,r8,1         31090001
+  * */
   val prog3 = Array(
     UInt("h8c010014"),
     UInt("h8c060015"),
